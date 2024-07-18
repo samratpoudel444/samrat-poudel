@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="samrat.png">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">PORTFOLIO</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="#contacts-header">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="bodytext">
+        <div id="text">
+            <h1>Hello I'm<br>
+                <span>Samrat Poudel</span>
+            </h1>
+            <small>Currently, I am studying CSIT learning Frontend Development.<br>
+                Also I am learning various other programming languages.<br><br>
+            </small>
+            <button><a href="#about">More about me</a></button>
+        </div>
+        <div><img src="samrat.png" alt=""></div>
+    </div>
+
+    <div class="about">
+        <div id="image">
+            <img src="1.png" alt="">
+        </div>
+        <div id="abouttext">
+            <h1 id="about">About me</h1><br><br>
+            <p>I am passionate about both football and web development. Football provides me with a sense of camaraderie, competition, and physical activity, while web development allows me to express my creativity, problem-solving skills, and build digital solutions that impact people's lives positively. Both interests fuel my drive for continuous learning and improvement, whether on the field or in front of a computer screen. They complement each other, with football offering an outlet for physical energy and web development providing a platform for intellectual growth and innovation. Overall, these passions enrich my life by providing diverse avenues for personal fulfillment and professional growth.</p>
+        </div>
+    </div>
+
+    <div class="service">
+        <div>
+            <h1>My services</h1>
+        </div>
+        <div class="design">
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>User interface design or user interface engineering is the design of user interfaces for machines and software, such as computers, home appliances, mobile devices, and other electronic devices, with the focus on maximizing usability and the user experience</p>
+                <a href="https://www.simplilearn.com/how-to-become-ui-ux-designer-article" target="_blank">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites for desktop browsers</p>
+                <a href="https://www.geeksforgeeks.org/web-design/" target="_blank">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Data analyst</h2>
+                <p>A data analyst reviews data to identify key insights into a business's customers and ways the data can be used to solve problems. They also communicate this information to company leadership and other stakeholders.</p>
+                <a href="https://www.geeksforgeeks.org/what-is-data-analysis/" target="_blank">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <div>
+            <h1>My skills</h1>
+        </div>
+        <br>
+        <p>HTML</p>
+        <div class="container">
+            <div class="skills html">80%</div>
+        </div>
+        <p>CSS</p>
+        <div class="container">
+            <div class="skills css">60%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="container">
+            <div class="skills js">30%</div>
+        </div>
+        <p>PHP</p>
+        <div class="container">
+            <div class="skills php">10%</div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="form">
+            <div id="contact">
+                <h1 id="contacts-header">Contact me</h1>
+                <br>
+                <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a>poudelsamrat444@gmail.com</a><br><br>
+                <i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a>9840265057</a><br><br>
+                <a href="https://www.facebook.com/samrat.poudel.351"><i class="fa-brands fa-facebook-f"></i>&nbsp;&nbsp;</a>
+                <a href="https://www.instagram.com/poudel.samrat/"><i class="fa-brands fa-instagram"></i>&nbsp;&nbsp;</a>
+                <a href="https://x.com/analyze_we"><i class="fa-brands fa-x-twitter"></i>&nbsp;&nbsp;</a>
+                <a href="https://www.linkedin.com/in/samrat-poudel-bab846175/"><i class="fa-brands fa-linkedin-in"></i>&nbsp;&nbsp;</a>
+            </div>
+            <div id="msgbox">
+                <br>
+                <h2>Message me: </h2>
+                <form action="mailto:poudelsamrat444@gmail.com" method="post" enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <br><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="message">Message:</label>
+                    <input type="message" name="message" required></textarea>
+                    <br><br>
+                    <button class="button-41" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+        <p>&copy; Copyright all rights reserved by Samrat</p>
+    </footer>
+</body>
+</html>

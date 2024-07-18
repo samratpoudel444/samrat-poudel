@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #121212;
+    font-family: 'Poetsen One', sans-serif;
+}
+
+header {
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    background-color: #333;
+    background-size: 400% 400%;
+    background-image: linear-gradient(-45deg, #008c73,#00738c, #00ff00, #004db2,#00a659);
+    animation: 2s myGradient infinite;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px #0059a6;
+}
+
+label.logo {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: wheat;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+nav ul li a:hover {
+    color: #0082e6;
+    size: 20px;
+    padding: 10px 10px 13px;
+        transition: .5s;
+        
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #333;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    nav ul li {
+        margin: 20px 0;
+    }
+    nav ul li a {
+        font-size: 24px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+.bodytext {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.bodytext div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.bodytext img {
+    max-width: 100%;
+    height: auto;
+}
+
+#text h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+#text span {
+    color :#2a613f;
+}
+
+#text small {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+button {
+    padding: 15px 25px;
+    border: 1px solid #a2b38b;
+    background-color: transparent;
+    color: #a2b38b;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color:#2a613f;
+    color: #121212;
+    transition: 0.5s;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.about div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+}
+
+#abouttext h1 {
+    font-size: 50px;
+    color :#2a613f;
+}
+
+#abouttext p {
+    font-size: 18px;
+    color: aliceblue;
+    text-align: justify;
+}
+
+.service {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.service h1 {
+    font-size: 50px;
+    color: #2a613f;
+}
+
+.design {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.design div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.design div i {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.design div h2 {
+    font-size: 24px;
+    color: aliceblue;
+    margin: 20px 0;
+}
+
+.design div p {
+    font-size: 16px;
+    color: aliceblue;
+    text-align: justify;
+}
+
+.design div a {
+    color: #a2b38b;
+    text-decoration: none;
+}
+
+.design div a:hover {
+    color: #0082e6;
+}
+
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.skills-section h1 {
+    font-size: 50px;
+    color: #2a613f;
+}
+
+.skills-section p {
+    font-size: 18px;
+    color: aliceblue;
+    margin: 10px 0;
+}
+
+.container {
+    width: 100%;
+    background-color: #ccc;
+}
+
+.skills {
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+.html {
+    width: 80%;
+    background-color: #a2b38b;
+}
+
+.css {
+    width: 60%;
+    background-color: #a2b38b;
+}
+
+.js {
+    width: 30%;
+    background-color: #a2b38b;
+}
+
+.php {
+    width: 10%;
+    background-color: #a2b38b;
+}
+
+footer {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+}
+
+footer p {
+    font-size: 16px;
+    color: aliceblue;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+#contact h1 {
+    font-size: 50px;
+    color: aliceblue;
+}
+
+#contact a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #a2b38b;
+}
+
+#msgbox {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+#msgbox h2 {
+    font-size: 40px;
+    color: #2a613f;
+}
+
+#msgbox form label {
+    font-size: 18px;
+    color: aliceblue;
+    display: block;
+    margin: 10px 0;
+}
+
+#msgbox form input,
+#msgbox form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #a2b38b;
+    border-radius: 5px;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+#msgbox form button {
+    padding: 15px 25px;
+    border: 1px solid #a2b38b;
+    background-color: transparent;
+    color: #a2b38b;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#msgbox form button:hover {
+    background-color: #a2b38b;
+    color: #121212;
+    transition: 0.5s;
+}
+
+/*for the portfolio html*/
+
+.portfolio h1{
+    color :#2a613f;
+    font-size:45px;
+    font-family:"Poetsen One", sans-serif;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.portfolio h2{
+    color :#ddd;
+    font-size:35px;
+    font-family:"Poetsen One", sans-serif;
+    margin-left: 10%;
+   
+}
+
+.portfolio p{
+    color :#ddd;
+    font-size:25px;
+    font-family:"Poetsen One", sans-serif;
+    margin-left: 10%;
+ 
+}
+
+
+.marks {
+    margin-left: 10%;
+  width: 80%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.marks {
+    font-size: 30px;
+    text-decoration: double;
+  text-align: center; 
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+}
+
+.SEE {width: 95%; background-color: #04AA6D;} /* Green */
+.plus {width: 90%; background-color: #04AA6D;} /* Blue */
+.bachelor {width: %; background-color: #04AA6D;} /* Red */
+
